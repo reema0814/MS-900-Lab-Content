@@ -11,24 +11,21 @@
 In this task, you will enable MFA in Azure Active Directory using Conditional Access Policy and verify the policy.
 
 1. Open a new browser window and log in to the admin center at [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339).
-
+      ![](Images/1.png)  ![](Images/2.png)
+     
 1. When prompted, use the credentials provided in the **Environment Details** page to log in to the admin center.
 
-1. From the navigation menu scroll down to  **Admin centers** and select **Azure Active Directory**, the Azure Active Directory overview page will appear.
+1. From the navigation menu scroll down to  **Admin centers** and select **Identity**, the Azure Active Directory overview page will appear.
 
-   ![](Images/img116.png)
-
-1. On the left side of the page scroll down to the **Protect & Secure** section under **Azure Active Directory** and then select the dropdown next to **Protect & Secure (1)** then select **security center (2)**.
-
-   ![](Images/ms900-t3.png)
+    ![](Images/3.0.jpg)
 
 1. In the **Security** page select **Conditional access**.
 
-   ![](Images/security.png)
+   ![](Images/5.png)
 
 1. At the top of the Policies pane, click **+ Create New Policy**. 
 
-   ![](Images/ms900-t4.png)
+   ![](Images/5-1.png)
 
 1. Provide a name for your policy as **MFA policy**. Under Assignments, select **Users and groups**. In the Include tab, **select users, and groups** and select the **Users and groups** from the list and select the user's you intend to enable MFA and click on **Select**.
 
@@ -36,19 +33,19 @@ In this task, you will enable MFA in Azure Active Directory using Conditional Ac
 
 1. Under **Cloud apps or actions**, In the Include tab, click on **Select Apps** and select the apps for which you intend to apply policy.
 
-   ![](Images/ms900-t2.png)
+   ![](Images/7.0.png)
 
 1. Now under **Conditions** tab select **Client apps** and in **Client apps** page under **Configure** select **Yes** and then select **Done**. You can also make use of other conditions like risk, device platform, or location based on your requirement.
 
-   ![](Images/ms900-5.png)
+   ![](Images/8.0.png)
    
 1. Now under **Access controls** select **Grant**, and then select **Grant access**, check the **Require multi-factor authentication** checkbox, and click on **select**.
 
-   ![](Images/ms900-6.png)
+   ![](Images/9.0.png)
    
 1. Confirm your settings and set Enable policy to **On**. Click on **Create** to create and enable your policy.
 
-   ![](Images/img139.png)
+   ![](Images/11.0.jpg)
    
     **Note :** You may see the error that default security need to disabled, then follow the below step :
 
@@ -77,13 +74,13 @@ In this task, you will enable MFA in Azure Active Directory using Conditional Ac
 ### Task 2 : Azure AD PIM                                                                                                                                                                               
 Privileged Identity Management (PIM) is a service in Azure Active Directory (Azure AD) that enables you to manage, control, and monitor access to important resources in your organization. These resources include resources in Azure AD, Azure, and other Microsoft Online Services such as Microsoft 365 or Microsoft Intune.
 
-1. From the navigation menu scroll down to **Admin centers** and select **Azure Active Directory**, the Azure Active Directory overview page will appear.
+1. From the navigation menu scroll down to **Admin centers** and select **Identity**, the Azure Active Directory overview page will appear.
 
-   ![](Images/img116.png)
+   ![](Images/3.0.jpg)
    
-1. On the Azure Active Directory page click on **Identity governance** under **Azure Active Directory** and then select **Privileged Identity Management**.
+1. On the Azure Active Directory page click on **Identity governance** under **Identity** and then select **Privileged Identity Management**.
 
-   ![](Images/ms900-9.png)
+   ![](Images/10.jpg)
 
 1. Under **Manage** select **Azure AD roles**.
 
@@ -97,7 +94,7 @@ Privileged Identity Management (PIM) is a service in Azure Active Directory (Azu
 
 1. Use the **Activation maximum duration** slider to set the maximum time, in hours, that a role stays active before it expires. This value can be from 1 to 24 hours.
 
-   ![](Images/ms900-4-5.png)
+   ![](Images/13.0.png)
 
 1. To require multi-factor authentication before activation, check the Require Multi-Factor Authentication on the activation box in the Assignment tab of the Edit role setting.
 
@@ -105,21 +102,21 @@ Privileged Identity Management (PIM) is a service in Azure Active Directory (Azu
 
 1. Now select **Assignment**, from here you can choose one of these eligible assignment duration options.
 
-   ![](Images/img121.png)
+   ![](Images/15.0.png)
 
 1. Select **Notification**, from here we can configure to receive notification when a member is assigned as eligible to the role or when a role is activated.
 
-   ![](Images/img122.png)
+   ![](Images/16.0.png)
 
 1. Now to assign a role, within the **Azure AD Privileged Identity Management** page under manage, click on **Roles**. This displays a list of roles for Azure AD permissions.
 
 1. Select **Add assignments** to open the Add assignments page.
 
-   ![](Images/img123.png)
+   ![](Images/17.0.png)
 
 1. From the **Select role** drop-down select a role you want to assign, and under **Select members** select a member to whom you want to assign the role, and then select **Next**.
    
-   ![](Images/ms900-4-6.png)
+   ![](Images/18.0.png)
 
 1. In the **Assignment type** list on the **Membership settings** pane, select **Eligible** or **Active**.
 
@@ -231,7 +228,7 @@ Microsoft Cloud App Security is a multi-mode Cloud Access Security Broker (CASB)
 
 1. In the **admin center**, from the **App launcher** click on **All apps** and in the search bar search for **Security**, from Open context menu click on **Open in new tab**.
 
-   ![](Images/img178.png)
+   ![](Images/12.0.jpg)
 
 1. Open a new tab and navigate to the https://portal.cloudappsecurity.com/.
   
@@ -285,9 +282,10 @@ Microsoft Cloud App Security is a multi-mode Cloud Access Security Broker (CASB)
 
 1. Now from the left-hand menu under **Discover** select **Cloud Discovery Dashboard**. It provides an at-a-glance overview of what kinds of apps are being used, your open alerts, and the risk levels of apps in your organization. It also shows you who your top app users are and provides an App Headquarter location map.
 
-   ![](Images/Cloud-apps3.png)
+ ![](Images/Cloud-apps4.png)
+
+   ![](Images/13.0.jpg)
    
-   ![](Images/Cloud-apps4.png)
 
 1. Click on **Discovered apps** tab, from here you can review which apps are risky and which are commonly used by using filters like:
 
